@@ -2,7 +2,7 @@
 import { Message } from './message';
 
 export const initialMessages: Message[] = [
-    { id: '1', text: `I'm working with this code:
+    { id: '0', text: `I'm working with this code:
 
     import React, { useEffect, useState } from 'react';
     import { View, Text, TextInput, Button, FlatList, StyleSheet, TouchableOpacity } from 'react-native';
@@ -117,11 +117,11 @@ export const initialMessages: Message[] = [
     
     export default ChatInterface;
      But it isn't working correctly. Can you render it and see what it looks like? `, type: 'sent' },
-    { id: '2', text: `I'm sorry for the confusion, but as an AI text-based model, I don't have the capability to render or execute code, including React Native code. I can help debug the code, explain how it works, or suggest improvements based on the information you provide.
+    { id: '1', text: `I'm sorry for the confusion, but as an AI text-based model, I don't have the capability to render or execute code, including React Native code. I can help debug the code, explain how it works, or suggest improvements based on the information you provide.
 
     If you're experiencing issues with this code, please provide more details about the problem. For example, are there any error messages? What is the expected behavior and how does the actual behavior differ? This information will help me assist you more effectively.`, type: 'received'},
-    { id: '3', text: `The screen should be displaying a list of messages, and input box, a microphone icon and a send button, but all I see is ChatGPT at the top.`, type: 'sent' },
-    { id: '4', text: `It seems like the messages are not being displayed on the screen. This could be due to a number of reasons. Let's try to debug this step by step:
+    { id: '2', text: `The screen should be displaying a list of messages, and input box, a microphone icon and a send button, but all I see is ChatGPT at the top.`, type: 'sent' },
+    { id: '3', text: `It seems like the messages are not being displayed on the screen. This could be due to a number of reasons. Let's try to debug this step by step:
 
     Check if the FlatList is rendering correctly: The FlatList component is responsible for displaying the list of messages. Make sure that the data prop is receiving the correct data. You can test this by initializing the messages state with some dummy data and see if it gets rendered.
     
@@ -134,8 +134,8 @@ export const initialMessages: Message[] = [
     Check the Voice library: The Voice library is used for speech recognition. If there's an issue with this library, it might be causing the app to crash or not render correctly. Try commenting out the Voice library code to see if it's causing the issue.
     
     If you've checked all of these and the issue still persists, please provide more details about the issue or any error messages you're seeing, and I'll be glad to help further.`, type: 'received' },
-    { id: '5', text: `Where do I initialize messages at?`, type: 'sent' },
-    { id: '6', text: `In your code, the messages state is initialized as an empty array. This is done in the following line:
+    { id: '4', text: `Where do I initialize messages at?`, type: 'sent' },
+    { id: '5', text: `In your code, the messages state is initialized as an empty array. This is done in the following line:
 
     javascript
     Copy code

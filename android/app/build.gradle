@@ -117,6 +117,12 @@ android {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
+        release {
+            storeFile file('../vcgptapp-release-key.keystore')
+            storePassword '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'
+            keyAlias 'release-key-alias'
+            keyPassword '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'
+        }
     }
     buildTypes {
         debug {
@@ -125,7 +131,7 @@ android {
         release {
             // Caution! In production, you need to generate your own keystore file.
             // see https://reactnative.dev/docs/signed-apk-android.
-            signingConfig signingConfigs.debug
+            signingConfig signingConfigs.release
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }

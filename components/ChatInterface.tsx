@@ -20,34 +20,8 @@ const ChatInterface = () => {
 
   const [input, setInput] = useState('');
   const [messages, setMessages] = useState<Array<Message>>(initialMessages);
+  console.log(messages);
 
-/*  const saveMessages = async (messages: Message[]) => {
-    try {
-      await AsyncStorage.setItem('messages', JSON.stringify(messages));
-    } catch (error) {
-      console.error('Error saving messages:', error);
-    }
-  };
-  
-  useEffect(() => {
-    saveMessages(messages);
-  }, [messages]);
-  
-  const loadMessages = async () => {
-    try {
-      const storedMessages = await AsyncStorage.getItem('messages');
-      if (storedMessages) {
-        setMessages(JSON.parse(storedMessages));
-      }
-    } catch (error) {
-      console.error('Error loading messages:', error);
-    }
-  };
-  
-  useEffect(() => {
-    loadMessages();
-  }, []);*/
-  
   // Function to send user input to the OpenAI API
   const sendMessage = async (input: string) => {
     try {
@@ -61,7 +35,7 @@ const ChatInterface = () => {
             role: 'user', content: input 
           }],
           max_tokens: 100,
-          temperature: 1.0,
+          temperature: 0.3,
           n: 1,
           stop: [],
         },
