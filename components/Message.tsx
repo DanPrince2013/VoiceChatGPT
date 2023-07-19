@@ -16,6 +16,7 @@ const styles = StyleSheet.create({
   },
   sentMessageText: {
     color: 'white',
+    flex: 1
   },
   receivedMessageContainer: {
     flexDirection: 'row',
@@ -25,6 +26,7 @@ const styles = StyleSheet.create({
   },
   receivedMessageText: {
     color: 'white',
+    flex: 1,
   },
   messageImage: {
     width: 30,
