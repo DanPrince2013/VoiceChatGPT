@@ -2,6 +2,9 @@
 #
 .DS_Store
 
+# OPENAI API KEY
+config.tsx
+
 # Xcode
 #
 build/

@@ -1,7 +1,8 @@
 // types.ts
 export type Message = {
-    id: string;
+    id?: string;
     text: string;
     type: 'sent' | 'received';
+    key?: string;
   };
   
